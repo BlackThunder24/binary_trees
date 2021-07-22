@@ -36,7 +36,8 @@ s[depth - 1][offset + left + width / 2] = '.';
 }
 else if (depth && !is_left)
 {
-for (i = 0; i < left + width; i++)s[depth - 1][offset - width / 2 + i] = '-';
+for (i = 0; i < left + width; i++)
+s[depth - 1][offset - width / 2 + i] = '-';
 s[depth - 1][offset + left + width / 2] = '.';
 }
 return (left + width + right);
